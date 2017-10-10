@@ -1,25 +1,25 @@
 Creación de una pila LAMP sencilla e implementación de la aplicación mediante Ansible Playbooks.
 -------------------------------------------
--Pasos:
+Pasos:
 -------------------------------------------
 Estos Playbooks requieren Ansible 1.2.
 
-Primer Paso: Se necesita generar imagen de los dockers
+Paso 1: Se necesita generar imagen de los dockers
 -------------------------------------------
 Estos Playbooks de ejercicios están destinados a ser una guía de referencia y de inicio para la construcción de Playbooks de ejercicios Ansible. Estos Playbooks fueron probados en CentOS 6.x por lo que se recomienda utilizar CentOS o RHEL para probar estos módulos.
 
-Segundo Paso: Generamos los Containers de Ubuntu, tales como: 
-
+Paso 2: Generamos los Containers de Ubuntu, tales como: 
+--------------------------------------------
   [webservers]
   localhost
 
   [dbservers]
   bienesible
 
-Tercer Paso: Se configuran los hosts que se tienen.
+Paso 3: Se configuran los hosts que se tienen.
 ----------------------------------------
 
-Cuarto Paso: Se configuran los Ansibles.
+Paso 4: Se configuran los Ansibles.
 ---------------------------------------
 
 Aquí el servidor web sería configurado en el host local y el dbserver en un
