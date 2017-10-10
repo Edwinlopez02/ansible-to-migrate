@@ -1,27 +1,34 @@
-Building a simple LAMP stack and deploying Application using Ansible Playbooks.
+Creación de una pila LAMP sencilla e implementación de la aplicación mediante Ansible Playbooks.
 -------------------------------------------
+-Pasos:
+-------------------------------------------
+Estos Playbooks requieren Ansible 1.2.
 
-These playbooks require Ansible 1.2.
+Primer Paso: Se necesita generar imagen de los dockers
+-------------------------------------------
+Estos Playbooks de ejercicios están destinados a ser una guía de referencia y de inicio para la construcción de Playbooks de ejercicios Ansible. Estos Playbooks fueron probados en CentOS 6.x por lo que se recomienda utilizar CentOS o RHEL para probar estos módulos.
+------------------------------------------
+Segundo Paso: Generamos los Containers de Ubuntu, tales como: 
 
-These playbooks are meant to be a reference and starter's guide to building
-Ansible Playbooks. These playbooks were tested on CentOS 6.x so we recommend
-that you use CentOS or RHEL to test these modules.
+  [webservers]
+  localhost
 
-This LAMP stack can be on a single node or multiple nodes. The inventory file
-'hosts' defines the nodes in which the stacks should be configured.
+  [dbservers]
+  bienesible
+----------------------------------------
+Tercer Paso: Se configuran los hosts que se tienen.
+----------------------------------------
 
-        [webservers]
-        localhost
+Cuarto Paso: Se configuran los Ansibles.
+---------------------------------------
 
-        [dbservers]
-        bensible
+Aquí el servidor web sería configurado en el host local y el dbserver en un
+servidor llamado "bensible". La pila se puede desplegar utilizando las siguientes
+mando:
 
-Here the webserver would be configured on the local host and the dbserver on a
-server called "bensible". The stack can be deployed using the following
-command:
+  ansible-playbook -i hosts site.yml
 
-        ansible-playbook -i hosts site.yml
-
-Once done, you can check the results by browsing to http://localhost/index.php.
-You should see a simple test page and a list of databases retrieved from the
-database server.
+---------------------------------------
+Una vez hecho esto, puede comprobar los resultados consultando http: //localhost/index.php.
+Debería ver una página de prueba simple y una lista de bases de datos
+servidor de base de datos.
