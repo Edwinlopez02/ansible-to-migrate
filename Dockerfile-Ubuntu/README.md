@@ -18,12 +18,11 @@ Se ejecuta el siguiente comando para la realización del pasos
 ```
 $ (sudo) docker build -t {{ nombre contenedor }} .
 
-En mi caso el {{ nombre contenedor }} será igual a server
+En este caso el {{ nombre contenedor }} será igual a server
 
 $ (sudo) docker build -t migrate_host .
 
-(sudo) -> Quiere decir que es opcional aveces con la instalación en sistemas linux, se requiere
-sino se realiza el paso de POST-INSTALLATION mostrado en la documentacion.
+(sudo) -> 
 ```
 
 Y tenemos creado nuestra imagen con CentOS 6 y ssh activo.
