@@ -16,13 +16,12 @@ Paso 1. Creación de la imagen en la que se basará el contenedor.
 Se ejecuta el siguiente comando para la realización del pasos
 
 ```
-$ (sudo) docker build -t {{ nombre contenedor }} .
+$ docker build -t {{ nombre contenedor }} .
 
-En este caso el {{ nombre contenedor }} será igual a server
+En este caso el {{ nombre contenedor }} será igual a ubuntu_db
 
-$ (sudo) docker build -t migrate_host .
+$ docker build -t migrate_host .
 
-(sudo) -> 
 ```
 
 Y tenemos creado nuestra imagen con CentOS 6 y ssh activo.
@@ -34,11 +33,11 @@ Se van a utilizar 2 contenedores, los cuales serán nuestos hosts en el sistema,
 ```
 Nombre del contenedor main = server_main
 
-$ (sudo) docker run -d -P --name migrate_server -p 2221:22 -p 80:80 migrate_host
+$ docker run -d -P --name migrate_server -p 2221:22 -p 80:80 migrate_host
 
 Nombre del contenedor mysql = wiki_mysql
 
-$ (sudo) docker run -d -P --name migrate_db -p 2222:22 -p 3306:3306 migrate_host
+$ docker run -d -P --name migrate_db -p 2222:22 -p 3306:3306 migrate_host
 
 ```
 
