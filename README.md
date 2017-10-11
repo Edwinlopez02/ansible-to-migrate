@@ -10,13 +10,13 @@ Estos Playbooks de ejercicios están destinados a ser una guía de referencia y 
 
 Paso 2: Generamos los Containers de Ubuntu, tales como: 
 --------------------------------------------
-
+```
   [webservers]
   localhost
 
   [dbservers]
-  bensible
-
+  bensible 
+  ```
 Paso 3: Se configuran los hosts que se tienen.
 ----------------------------------------
 
@@ -26,9 +26,9 @@ Paso 4: Se configuran los Ansibles.
 Aquí el servidor web sería configurado en el host local y el dbserver en un
 servidor llamado "bensible". La pila se puede desplegar utilizando las siguientes
 mando:
-
+```
   ansible-playbook -i hosts site.yml
-
+```
 ---------------------------------------
 Una vez hecho esto, puede comprobar los resultados consultando http: //localhost/index.php.
 Debería ver una página de prueba simple y una lista de bases de datos
