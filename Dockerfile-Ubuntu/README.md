@@ -42,13 +42,6 @@ $ (sudo) docker run -d -P --name migrate_db -p 2222:22 -p 3306:3306 migrate_host
 
 ```
 
-Los alias seran los nombres de los contenedores
-
- Alias |
- --- |
- migrate_server |
- migrate_db |
-
 Luego de esto registramos los alias con el siguiente comando
 
 ` $ echo "127.0.0.1 migrate_server migrate_db" | sudo tee -a /etc/hosts `
