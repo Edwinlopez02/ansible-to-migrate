@@ -14,8 +14,8 @@ Paso 2: Generamos los Containers de Ubuntu, tales como:
   localhost
 
   [dbservers]
-  bienesible
-
+  bensible
+  
 Paso 3: Se configuran los hosts que se tienen.
 ----------------------------------------
 
