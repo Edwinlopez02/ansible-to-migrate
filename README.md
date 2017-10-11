@@ -10,12 +10,14 @@ Estos Playbooks de ejercicios están destinados a ser una guía de referencia y 
 
 Paso 2: Generamos los Containers de Ubuntu, tales como: 
 --------------------------------------------
-  [webservers]
+  
+  """
+  [webservers]
   localhost
 
   [dbservers]
   bensible
-  
+  """
 Paso 3: Se configuran los hosts que se tienen.
 ----------------------------------------
 
