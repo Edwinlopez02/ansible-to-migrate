@@ -28,12 +28,11 @@ Se van a utilizar 2 contenedores, los cuales serán nuestos hosts en el sistema,
 ```
 Nombre del contenedor main = server_main
 
-$ docker run -d -P --name migrate_server -p 2221:22 -p 80:80 server
+$ (sudo) docker run -d -P --name ubuntu_main -p 2221:22 -p 80:80 server
 
-Nombre del contenedor mysql = wiki_mysql
+Nombre del contenedor mysql = ubuntu_db
 
-$ docker run -d -P --name migrate_db -p 2222:22 -p 3306:3306 server
-
+$ (sudo) docker run -d -P --name ubuntu_db -p 2222:22 -p 3306:3306 server
 ```
 
 Luego de esto registramos los alias con el siguiente comando
