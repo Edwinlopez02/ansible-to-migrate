@@ -28,11 +28,11 @@ Se van a utilizar 2 contenedores, los cuales serán nuestos hosts en el sistema,
 ```
 Nombre del contenedor main = server_main
 
-$ (sudo) docker run -d -P --name ubuntu_main -p 2221:22 -p 80:80 server
+$ docker run -d -P --name ubuntu_main -p 2221:22 -p 80:80 server
 
 Nombre del contenedor mysql = ubuntu_db
 
-$ (sudo) docker run -d -P --name ubuntu_db -p 2222:22 -p 3306:3306 server
+$ docker run -d -P --name ubuntu_db -p 2222:22 -p 3306:3306 server
 ```
 
 Luego de esto registramos los alias con el siguiente comando
@@ -52,7 +52,7 @@ Para realizar nuestra conexion nuestra llave privada debe contar con los permiso
 Por tal razon ejecutamos el siguiente comando
 
 ```
-$ chmod 0600 /path/to/ansible-to-migrate/Keys/key
+$ chmod 0600 ../ansible-to-migrate/llaves/key
 
 ```
 
