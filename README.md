@@ -12,10 +12,10 @@ Paso 2: Generamos los Containers de Ubuntu, tales como:
 --------------------------------------------
 ```
   [webservers]
-  localhost
-
+  ubuntu_main
+  
   [dbservers]
-  bensible 
+  ubuntu_db
   ```
 Paso 3: Se configuran los hosts que se tienen.
 ----------------------------------------
