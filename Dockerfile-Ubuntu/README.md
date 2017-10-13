@@ -16,12 +16,7 @@ Paso 1. Creación de la imagen en la que se basará el contenedor.
 Se ejecuta el siguiente comando para la realización del pasos
 
 ```
-$ docker build -t {{ nombre contenedor }} .
-
-En este caso el {{ nombre contenedor }} será igual a ubuntu_db
-
 $ docker build -t migrate_host .
-
 ```
 
 Y tenemos creado nuestra imagen con CentOS 6 y ssh activo.
