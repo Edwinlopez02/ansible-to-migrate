@@ -1,7 +1,7 @@
 [webservers]
-ubuntu_main ansible_port=2221 ansible_ssh_private_key_file=Keys/key
+ubuntu_main ansible_port=2221 ansible_ssh_private_key_file=llaves/key
 
 [dbservers]
-ubuntu_db ansible_port=2222 ansible_ssh_private_key_file=Keys/key
+ubuntu_db ansible_port=2222 ansible_ssh_private_key_file=llaves/key
 
 
