@@ -37,7 +37,7 @@ $ docker run -d -P --name ubuntu_db -p 2222:22 -p 3306:3306 server
 
 Luego de esto registramos los alias con el siguiente comando
 
-` $ echo "127.0.0.1 migrate_server migrate_db" | sudo tee -a /etc/hosts `
+` $ echo "127.0.0.1 ubuntu_main ubuntu_db" | sudo tee -a /etc/hosts `
 
 Y con esto contamos con los contenedores creados y con posibilidad de identificación.
 
