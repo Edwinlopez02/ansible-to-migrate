@@ -29,11 +29,15 @@ Para esto, se debe editar los hosts adicionando los alias, donde podemos hacerlo
 Paso 3: Se le dan los permisos para hacer la conexion con la llave 
 ---------------------------------------
 Se necesita tener una conexion con la llave, para eso debemos darle los permisos necesarios 
+
 ``chmod 0600 ../authorized_keys``
+
 Luego de esto, realizamos una prueba de conexion a las maquinas que hemos creado anteriormente, las cuales se crearon en el puerto 2221 y 2222 los cuales, estan abiertos para la conexion:
+
 ``ssh root@ubuntu_main -p 2221 -i ../key.private ssh root@ubuntu_db -p 2222 -i ../authorized_keys``
+
 Paso 4: Continuamos con Ansible:
-------------------------
+--------------------------------------
 Aquí el servidor web sería configurado en el host local y el dbserver en un
 servidor llamado "bensible". La pila se puede desplegar utilizando las siguientes
 mando:
